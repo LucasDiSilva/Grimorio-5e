@@ -1,0 +1,12 @@
+{
+  "name": "Grimório — D&D 5e",
+  "short_name": "Grimório",
+  "description": "Personagens, magias e recursos de D&D 5e (2014).",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#17131f",
+  "theme_color": "#17131f",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
