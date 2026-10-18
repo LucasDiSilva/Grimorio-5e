@@ -1,0 +1,40 @@
+/* Paletas do Grimório; as variáveis preservam o tema roxo original como padrão. */
+:root[data-theme="rosa"]{--bg:#1b121d;--panel:#261a29;--panel2:#342337;--line:#59425d;--muted:#c7adc7;--text:#fff5fc;--gold:#df79b7;--gold2:#f4b2d7;--green:#a2d5b0;--red:#ef8793;--theme-edge:#714a70;--theme-accent:#e58ac4;--theme-accent-strong:#995c95;--theme-surface:#211823;--theme-surface-alt:#38283a}
+:root[data-theme="azul"]{--bg:#111a28;--panel:#1a2638;--panel2:#25364d;--line:#3d536e;--muted:#b3c5dc;--text:#f3f8ff;--gold:#79b9ff;--gold2:#b6dcff;--green:#91dec0;--red:#ff899a;--theme-edge:#46678c;--theme-accent:#82baff;--theme-accent-strong:#426d9c;--theme-surface:#162233;--theme-surface-alt:#293c55}
+:root[data-theme="verde-claro"]{--bg:#edf6ee;--panel:#f9fcf8;--panel2:#e4efe4;--line:#bdcfbf;--muted:#5d725f;--text:#26372a;--gold:#4d9b62;--gold2:#317c49;--green:#39865b;--red:#bb4653;--theme-edge:#a6c4aa;--theme-accent:#73b87d;--theme-accent-strong:#cce9cf;--theme-surface:#f2f8f1;--theme-surface-alt:#e5f0e4}
+:root[data-theme="verde-escuro"]{--bg:#101812;--panel:#1a261d;--panel2:#25362a;--line:#3e5544;--muted:#b0c2b2;--text:#f3faf4;--gold:#8fd49b;--gold2:#b9e8be;--green:#8bd4ad;--red:#ef8490;--theme-edge:#46664c;--theme-accent:#8ed39a;--theme-accent-strong:#396847;--theme-surface:#152019;--theme-surface-alt:#293b2e}
+:root[data-theme="amarelo"]{--bg:#1b180e;--panel:#282315;--panel2:#39321e;--line:#5d5131;--muted:#c9bd9b;--text:#fff9e9;--gold:#e5c35b;--gold2:#f3dc8a;--green:#aad28a;--red:#ef8790;--theme-edge:#776435;--theme-accent:#e9c85e;--theme-accent-strong:#8f7531;--theme-surface:#211d12;--theme-surface-alt:#403820}
+:root[data-theme="vermelho"]{--bg:#1c1114;--panel:#2a191d;--panel2:#3b2329;--line:#624048;--muted:#d0b1b4;--text:#fff4f4;--gold:#ed747c;--gold2:#ffb2b6;--green:#a9d6a5;--red:#ff858b;--theme-edge:#7b4951;--theme-accent:#ee7079;--theme-accent-strong:#984b55;--theme-surface:#211518;--theme-surface-alt:#44282e}
+
+/* Recolore os componentes com tons fixos do tema padrão. */
+:root[data-theme] .char-item:hover,:root[data-theme] .char-item.active{background:var(--panel2)!important;border-color:var(--line)!important}
+:root[data-theme] .avatar,:root[data-theme] .char-item.active .avatar{background:var(--theme-surface-alt)!important;color:var(--gold2)!important}
+:root[data-theme] .rest-card,:root[data-theme] .rest-card.long{background:var(--panel2)!important;border-color:var(--line)!important}
+:root[data-theme] .slot,:root[data-theme] .spell-row,:root[data-theme] .feature-row,:root[data-theme] .skill-row,:root[data-theme] .bag-item,:root[data-theme] .weapon-table td,:root[data-theme] .icon-btn,:root[data-theme] .hp-buttons,:root[data-theme] .temp-hp-row,:root[data-theme] .special-item,:root[data-theme] .special-item-head{background:var(--theme-surface)!important;border-color:var(--line)!important;color:var(--text)}
+:root[data-theme] .field input,:root[data-theme] .field select,:root[data-theme] .field textarea,:root[data-theme] .skill-input,:root[data-theme] .skill-select,:root[data-theme] .spellcasting-field input,:root[data-theme] .spellcasting-field select,:root[data-theme] .temp-hp-actions input,:root[data-theme] .hp-adjust input{background:var(--theme-surface-alt)!important;border-color:var(--line)!important;color:var(--text)!important}
+:root[data-theme] .modal{background:var(--panel)!important;border-color:var(--line)!important;color:var(--text)}
+:root[data-theme] .combat-panel{background:var(--panel)!important;border-color:var(--line)!important}
+:root[data-theme] .hp-meter{background:var(--bg)!important}
+:root[data-theme] .hp-meter-fill{background:linear-gradient(90deg,var(--gold),var(--gold2))!important}
+:root[data-theme] .bag-step{background:var(--theme-accent-strong)!important;border-color:var(--theme-edge)!important;color:var(--text)}
+:root[data-theme] .temp-hp-value,:root[data-theme] .temp-hp-value strong,:root[data-theme] .temp-hp-note,:root[data-theme] .special-item-description,:root[data-theme] .special-item-category{color:var(--text)!important}
+:root[data-theme] .spell-card{background:var(--panel)!important;border-color:var(--theme-edge)!important}
+:root[data-theme] .spell-card-head,:root[data-theme] .feature-card .spell-card-head{background:var(--theme-accent-strong)!important}
+:root[data-theme] .spell-card-body{background:linear-gradient(110deg,var(--theme-surface-alt),var(--panel2))!important;color:var(--text)!important}
+:root[data-theme] .spell-detail b,:root[data-theme] .spell-effect b{color:var(--gold2)!important}
+:root[data-theme] .spell-effect{border-color:var(--line)!important}
+:root[data-theme] .pill{background:var(--theme-surface-alt)!important;color:var(--gold2)!important}
+:root[data-theme] .empty-state,:root[data-theme] .weapons-empty,:root[data-theme] .bag-empty{border-color:var(--line)!important}
+:root[data-theme] .combat-title span,:root[data-theme] .hp-label,:root[data-theme] .hp-count small,:root[data-theme] .hp-adjust,:root[data-theme] .temp-hp-value{color:var(--muted)!important}
+:root[data-theme] .btn:hover{border-color:var(--theme-edge);background:var(--panel2)}
+:root[data-theme] .btn.gold:hover{background:var(--gold2)}
+
+.theme-picker{position:relative;display:flex;align-items:center}
+.theme-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:8;width:205px;padding:7px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 36px #0005;display:grid;gap:3px}
+.theme-menu[hidden]{display:none!important}
+.theme-option{display:flex;align-items:center;gap:9px;width:100%;padding:8px 9px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);text-align:left;font-size:12px}
+.theme-option:hover,.theme-option[aria-pressed="true"]{background:var(--panel2);border-color:var(--line)}
+.theme-dot{width:17px;height:17px;flex:none;border-radius:50%;border:1px solid #ffffff55;background:var(--swatch)}
+.theme-dot.original{--swatch:#b68aff}.theme-dot.rosa{--swatch:#e989c7}.theme-dot.azul{--swatch:#79b9ff}.theme-dot.verde-claro{--swatch:#73b87d}.theme-dot.verde-escuro{--swatch:#396847}.theme-dot.amarelo{--swatch:#e5c35b}.theme-dot.vermelho{--swatch:#ed747c}
+:root[data-theme="verde-claro"] .theme-menu{box-shadow:0 12px 36px #26372a22}
+@media(max-width:650px){.theme-menu{right:-95px}.theme-picker .btn{width:35px;height:35px;padding:8px;font-size:0;line-height:1}.theme-picker .btn::before{content:"🎨";font-size:15px}}
